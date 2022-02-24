@@ -1453,14 +1453,14 @@ footer svg {
 
     .menu-reveal {
         background-color: #7a7b85;
-        transform: translateX(5vw) translateY(80px);
+        transform: translateX(-5vw) translateY(80px);
         /* transform-origin: left; */
         /* right: -95vw; */
 
     }
 
     #menu-checkbox:checked ~ .linkswrap {
-        transform: translateX(5vw) translateY(80px);
+        transform: translateX(-5vw) translateY(80px);
         /* background-color: #7a7b85; */
     }
 
@@ -1474,7 +1474,7 @@ footer svg {
         padding-top: 40px;
         background-color: #dec7ff;
         z-index: 10;
-        transform: translateX(-5vw) translateY(80px);
+        transform: translateX(95vw) translateY(80px);
         will-change: transform;
         /* transform-origin: (0,0); */
         transition: .4s  cubic-bezier(0.68, -0.6, 0.32, 1.6);
