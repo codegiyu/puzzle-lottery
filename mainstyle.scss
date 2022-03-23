@@ -230,7 +230,7 @@ nav {
 		line-height: 1.25rem;
 		font-weight: 400;
 		letter-spacing: 1px;
-		color: $color_2;
+		color: $text-white;
 		font-family: $primary_font;
 	}
 }
@@ -407,7 +407,7 @@ nav {
 		line-height: 1.25rem;
 		font-weight: 400;
 		font-family: $primary_font;
-		color: $color_3;
+		color: $text-coloured;
 		letter-spacing: 3px;
 		text-align: center;
 	}
@@ -418,7 +418,7 @@ nav {
 		line-height: 1.25rem;
 		font-weight: 400;
 		font-family: $primary_font;
-		color: $color_4;
+		color: $text-light;
 		text-align: justify;
 		&:nth-of-type(1) {
 			margin-top: 30px;
@@ -441,7 +441,7 @@ nav {
 	font-weight: 400;
 	line-height: 1.25rem;
 	font-family: $primary_font;
-	color: $color_2;
+	color: $text-white;
 }
 #how-to-play {
 	padding-top: 100px;
@@ -512,7 +512,7 @@ nav {
 		font-weight: 400;
 		line-height: 1.3rem;
 		font-family: $primary_font;
-		color: $color_4;
+		color: $text-light;
 	}
 	a {
 		text-decoration: none;
@@ -520,7 +520,7 @@ nav {
 		font-weight: 600;
 		line-height: 1.25rem;
 		font-family: $primary_font;
-		color: $color_3;
+		color: $text-coloured;
 		&:hover {
 			text-decoration: underline;
 		}
@@ -552,10 +552,10 @@ nav {
 	font-weight: 600;
 	line-height: 1.25rem;
 	font-family: $primary_font;
-	color: $color_3;
+	color: $text-coloured;
 }
 #daily-winners {
-	background-color: $background-color_8;
+	background-color: $light-gray-background-color;
 	padding: 50px auto;
 }
 .slide-box {
@@ -638,7 +638,7 @@ nav {
 		font-family: $primary_font;
 		letter-spacing: 1px;
 		word-spacing: 15px;
-		color: $color_2;
+		color: $text-white;
 		margin: 0 auto;
 	}
 }
@@ -661,7 +661,7 @@ nav {
 }
 .weekdays {
 	width: 100%;
-	background-color: $background-color_14;
+	background-color: $text-dark;
 	text-align: center;
 	border-radius: 3px;
 	h6 {
@@ -671,7 +671,7 @@ nav {
 		font-family: $primary_font;
 		letter-spacing: 1px;
 		word-spacing: 15px;
-		color: $color_2;
+		color: $text-white;
 		margin: 0 auto;
 	}
 }
@@ -845,27 +845,27 @@ nav {
 }
 .giyu-faith {
 	background-color: $faith;
-	color: $color_2;
+	color: $text-white;
 }
 .banke-o {
 	background-color: $banke;
-	color: $color_2;
+	color: $text-white;
 }
 .giyu-kingsley {
 	background-color: $kingsley;
-	color: $color_2;
+	color: $text-white;
 }
 .giyu-ann {
 	background-color: $ann;
-	color: $color_2;
+	color: $text-white;
 }
 .koi {
 	background-color: $koi;
-	color: $color_2;
+	color: $text-white;
 }
 .giyu-abdul {
 	background-color: $abdul;
-	color: $color_2;
+	color: $text-white;
 }
 #leaderboard-wrap {
 	width: 50%;
@@ -908,7 +908,7 @@ nav {
 	font-weight: 600;
 	line-height: 1rem;
 	font-family: $primary_font;
-	color: $color_2;
+	color: $text-white;
 }
 #leaderboard-body {
 	width: 100%;
@@ -937,7 +937,7 @@ nav {
 		line-height: 50px;
 		font-weight: 700;
 		font-family: $primary_font;
-		color: $color_3;
+		color: $text-coloured;
 	}
 }
 .entry-name {
@@ -949,7 +949,7 @@ nav {
 		font-weight: 700;
 		font-family: $primary_font;
 		letter-spacing: 0.5px;
-		color: $color_3;
+		color: $text-coloured;
 		margin-left: 45px;
 	}
 }
@@ -962,7 +962,7 @@ nav {
 		line-height: 50px;
 		font-weight: 700;
 		font-family: $primary_font;
-		color: $color_3;
+		color: $text-coloured;
 		text-align: center;
 	}
 }
@@ -982,7 +982,7 @@ nav {
 	line-height: 1.25rem;
 	font-weight: 300;
 	font-family: $primary_font;
-	color: $color_3;
+	color: $text-coloured;
 	letter-spacing: 3px;
 	text-align: center;
 	margin: 20px auto 50px;
@@ -1033,14 +1033,14 @@ nav {
 		position: relative;
 		display: flex;
 		align-items: center;
-		color: $color_2;
+		color: $text-white;
 		font-weight: 500;
 		font-size: 1.125rem;
 	}
 }
 .faquestion {
 	background: #330080;
-	color: $color_2;
+	color: $text-white;
 	padding: 1rem;
 	position: relative;
 	border-radius: 5px;
@@ -1049,7 +1049,7 @@ nav {
 	max-height: 0px;
 	overflow: hidden;
 	transition: max-height 0.5s;
-	background-color: $white-color;
+	background-color: $white;
 	border-radius: 0 0 5px 5px;
 	box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
 	p {
@@ -1091,7 +1091,7 @@ footer {
 		line-height: 30px;
 		font-family: $primary_font;
 		word-spacing: 5px;
-		color: $color_2;
+		color: $text-white;
 		margin: 0 auto;
 	}
 }
@@ -1255,7 +1255,7 @@ footer {
 			line-height: 2.2rem;
 			font-weight: 400;
 			letter-spacing: 1px;
-			color: $color_2;
+			color: $text-white;
 			font-family: $primary_font;
 		}
 	}
@@ -1319,7 +1319,7 @@ footer {
 		line-height: 2.2rem;
 		font-family: $primary_font;
 		margin: 1.25rem auto 1.5rem;
-		color: $color_4;
+		color: $text-light;
 	}
 	#banner-btn {
 		width: 200px;
@@ -1386,7 +1386,7 @@ footer {
 			line-height: 2rem;
 			font-weight: 400;
 			font-family: $primary_font;
-			color: $color_4;
+			color: $text-light;
 			text-align: justify;
 			&:nth-of-type(1) {
 				margin-top: 30px;
@@ -1409,7 +1409,7 @@ footer {
 		font-weight: 400;
 		line-height: 2.2rem;
 		font-family: $primary_font;
-		color: $color_2;
+		color: $text-white;
 	}
 	#how-to-play {
 		padding-top: 0px;
@@ -1476,7 +1476,7 @@ footer {
 			font-weight: 400;
 			line-height: 2.2rem;
 			font-family: $primary_font;
-			color: $color_4;
+			color: $text-light;
 		}
 		a {
 			text-decoration: none;
@@ -1484,7 +1484,7 @@ footer {
 			font-weight: 600;
 			line-height: 2.2rem;
 			font-family: $primary_font;
-			color: $color_3;
+			color: $text-coloured;
 			&:hover {
 				text-decoration: underline;
 			}
@@ -1502,7 +1502,7 @@ footer {
 		font-weight: 900;
 		line-height: 80px;
 		font-family: $primary_font;
-		color: $color_2;
+		color: $text-white;
 		text-align: center;
 	}
 	.special-text {
@@ -1510,7 +1510,7 @@ footer {
 		font-weight: 600;
 		line-height: 2.2rem;
 		font-family: $primary_font;
-		color: $color_3;
+		color: $text-coloured;
 	}
 	.slide-box {
 		width: 100%;
@@ -1552,7 +1552,7 @@ footer {
 			font-family: $primary_font;
 			letter-spacing: 1px;
 			word-spacing: 15px;
-			color: $color_2;
+			color: $text-white;
 			margin: 0 auto;
 		}
 	}
@@ -1576,7 +1576,7 @@ footer {
 			font-family: $primary_font;
 			letter-spacing: 1px;
 			word-spacing: 15px;
-			color: $color_2;
+			color: $text-white;
 			margin: 0 auto;
 		}
 	}
