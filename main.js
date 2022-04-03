@@ -52,6 +52,45 @@ function currentSlide (n) {
     showSlides (slideIndex = n);
 }
 
+//  For Leaderboard Slides
+
+var lbSlideIndex = 1;
+lbShowSlides (lbSlideIndex);
+
+function lbPlusSlides (n) {
+    lbShowSlides (slideIndex += n);
+}
+
+function lbShowSlides (n) {
+    var i;
+    var x;
+    var y;
+    var slides = document.getElementsByClassName("lb-slides");
+    var dots = document.getElementsByClassName("lb-dot");
+
+    if (n > slides.length) {
+        lbSlideIndex = 1;
+    }
+
+    if (n < 1) {
+        lbSlideIndex = slides.length;
+    }
+
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", " ");
+    }
+
+    slides[lbSlideIndex - 1].style.display = "block";
+    dots[lbSlideIndex - 1].className += " active";
+}
+
+function lbCurrentSlide (n) {
+    lbShowSlides (lbSlideIndex = n);
+}
 
 var sliderTrigger = document.getElementsByClassName("slider-trigger")[0];
 var slider = document.getElementsByClassName('slider-parent')[0];
