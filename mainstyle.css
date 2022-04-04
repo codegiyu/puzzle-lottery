@@ -1042,7 +1042,8 @@ nav {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr;
-  grid-template-areas: "top" "bottom";
+  grid-template-areas: "top"
+ "bottom";
 }
 
 .cp-top {
@@ -1159,7 +1160,8 @@ nav {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 60px 1fr;
-  grid-template-areas: "heading" "entries";
+  grid-template-areas: "heading"
+ "entries";
 }
 
 .lb-header {
@@ -1970,7 +1972,8 @@ footer {
     background-color: #fbf9ff;
     grid-template-columns: 1fr;
     grid-template-rows: auto auto;
-    grid-template-areas: "left" "right";
+    grid-template-areas: "left"
+ "right";
   }
   .champion {
     display: none;
@@ -2032,6 +2035,9 @@ footer {
     padding-bottom: 2em;
     border-radius: 0 0 10px 10px;
   }
+.ent-prize {
+padding: 4px 8px;
+}
   #faqs-wrap {
     width: 90%;
   }
