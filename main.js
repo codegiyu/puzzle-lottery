@@ -58,7 +58,7 @@ var lbSlideIndex = 1;
 lbShowSlides (lbSlideIndex);
 
 function lbPlusSlides (n) {
-    lbShowSlides (slideIndex += n);
+    lbShowSlides (lbSlideIndex += n);
 }
 
 function lbShowSlides (n) {
