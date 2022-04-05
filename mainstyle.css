@@ -1964,6 +1964,9 @@ footer {
   .lb-section {
     padding: 5em 0;
   }
+.lb-section .slide-control {
+top: 45%;
+}
   .lb-slide-box {
     width: 95vw;
   }
