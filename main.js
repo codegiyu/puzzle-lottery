@@ -112,7 +112,7 @@ function addActive() {
     }
 }
 
-sliderTrigger.addEventListener( "click" , function(el){
+sliderTrigger.addEventListener( "click" , function(){
     if(slider.classList.contains("active")){
         removeActive();
     }else{
@@ -124,7 +124,7 @@ sliderTrigger.addEventListener( "click" , function(el){
 var menuButtons = document.getElementsByClassName("menu-buttons");
 
 for (y = 0; y < menuButtons.length; y++) {
-    menuButtons[y].addEventListener( "click" , function(ra){
+    menuButtons[y].addEventListener( "click" , function(){
         removeActive();
 });
 }
