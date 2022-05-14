@@ -972,7 +972,7 @@ nav {
 }
 
 .tie-faith-banke {
-  background-color: linear-gradient(to right, #800080, #008080);
+  background: linear-gradient(to right, #800080, #008080);
   color: #f2f2f2;
 }
 
