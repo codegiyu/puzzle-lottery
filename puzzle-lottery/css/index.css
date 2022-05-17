@@ -75,7 +75,7 @@ html {
 body {
     font-family: var(--ff-manrope);
     font-size: var(--fs-400);
-    font-weight: 600;
+    font-weight: 500;
     color: rgb( var(--clr-black) );
     background-color: rgb( var(--clr-white) );
     line-height: 1.5;
@@ -344,54 +344,12 @@ select {
 /* ------Banner Section------- */
 /* --------------------------- */
 
-.banner {
-    padding-top: 0rem;
-    padding-bottom: 1.5rem;
-}
-
-/* .banner-wrap {
-    margin-top: 8rem;
-} */
-
-.logo-block {
-    --gap: 0.25rem;
-}
-
-.logo-name {
-    font-weight: 800;
-}
-
-.nav-links-list {
-    --flow-space: 2rem;
-}
-
-.banner-write-up {
-    width: 35%;
-}
-
-.banner-write-up-wrap {
-    --gap: 1rem;
-}
-
-.banner-write-up-wrap p {
-    width: 80%;
-}
-
-/* .banner-write-up-wrap a {
-} */
-
-.banner-image {
-    width: 65%;
-}
-
-.game-img {
-    width: 45rem;
-    aspect-ratio: 1.1;
-    background-image: url("../img/Hero-Image.png");
+.hero-section {
+    background-color: linear-gradient(107.44deg, rgb( var(--clr-green) ) 3.27%, rgb( var(--clr-blue) ) 114.5%);
+    background-image: url('../img/hero-background.png');
     background-size: cover;
-    /* border: 1px solid white; */
+    background-position: center;
 }
-
 
 /* --------------------------- */
 /* ------Samples Section------ */
