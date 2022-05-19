@@ -15,6 +15,7 @@
     --clr-black: 30, 27, 27;
     --clr-white: 248, 248, 255;
     --clr-purple: 92, 48, 111;
+    --clr-violet: 62, 42, 131;
     --clr-blue: 38, 97, 196;
     --clr-blue-green: 42, 121, 142;
     --clr-green: 42, 191, 79;
@@ -351,19 +352,6 @@ select {
     visibility: visible;
 }
 
-.primary-btn {
-    padding: 0.5rem 1rem;
-    background: linear-gradient(94.13deg, rgba(255, 251, 251, 0.39) 3.81%, rgba(253, 249, 249, 0.06) 108.43%);
-    box-shadow: 0px 4px 24px -1px rgba(0,0,0,0.05);
-    backdrop-filter: blur(51px);
-    --gap: 0.25rem;
-    border-radius: 5px;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    -ms-border-radius: 5px;
-    -o-border-radius: 5px;
-}
-
 .gb-transparent {
     position: relative;
     padding: 0.4rem 1.5rem;
@@ -375,11 +363,11 @@ select {
     box-shadow: inset 0px 4px 24px -1px rgba(0,0,0,0.05);
     backdrop-filter: blur(51px);
     z-index: 1;
-    border-radius: 8px;
-    -webkit-border-radius: 8px;
-    -moz-border-radius: 8px;
-    -ms-border-radius: 8px;
-    -o-border-radius: 8px;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
     transition: all 350ms ease;
     -webkit-transition: all 350ms ease;
     -moz-transition: all 350ms ease;
@@ -418,6 +406,28 @@ select {
     -ms-border-radius: 8px;
     -o-border-radius: 8px;
 } */
+
+.gb-green {
+    padding: 0.4rem 1.5rem;
+    background: white;
+    color: rgb( var(--clr-green) );
+    border: 2px solid rgb( var(--clr-green) );
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+    transition: all 350ms ease;
+    -webkit-transition: all 350ms ease;
+    -moz-transition: all 350ms ease;
+    -ms-transition: all 350ms ease;
+    -o-transition: all 350ms ease;
+}
+
+.gb-green:hover {
+    background: rgb( var(--clr-green) );
+    color: white;
+}
 
 /* --------------------------- */
 /* ------Banner Section------- */
@@ -458,12 +468,75 @@ select {
 /* ------Samples Section------ */
 /* --------------------------- */
 
-.samples {
-    padding-top: 3rem;
-    padding-bottom: 3rem;
+.samples-title {
+    padding-top: 0.4rem;
+    padding-bottom: 0.4rem;
 }
 
-.samples-slider {
+.samples-wrap {
+    height: 20rem;
+    position: relative;
+}
+
+.sample-background {
+    height: 15rem;
+    background: url('../img/slider-rectangle.png');
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.24;
+    z-index: 1;
+    mix-blend-mode: difference;
+    /* filter: blur(10px); */
+    backdrop-filter: blur(40px);
+}
+
+.blur-layer {
+    height: 15rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    filter: blur(10px);
+    -webkit-filter: blur(10px);
+}
+
+.sample-box-wrap {
+    height: 15rem;
+    z-index: 3;
+    background: rgba( var(--clr-violet), 1);
+    /* backdrop-filter: blur(40px); */
+}
+
+.sample-text-section {
+    z-index: 4;
+}
+
+.sample-img-section {
+    height: 15rem;
+    z-index: 4;
+}
+
+.sample-main-img {
+    height: 98%;
+    /* z-index: 3; */
+}
+
+.sample-shadow-img {
+    transform: scaleX(1.3);
+    opacity: 0.8;
+    position: absolute;
+    bottom: -3%;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    -webkit-transform: scaleX(1.3);
+    -moz-transform: scaleX(1.3);
+    -ms-transform: scaleX(1.3);
+    -o-transform: scaleX(1.3);
+}
+
+/* .samples-slider {
     width: 100%;
     height: 20rem;
     overflow-x: hidden;
@@ -495,4 +568,4 @@ select {
     height: 40rem;
     margin-top: 3rem;
     background-image: url('');
-}
+} */
