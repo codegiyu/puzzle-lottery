@@ -484,14 +484,14 @@ select {
     position: absolute;
     top: 0;
     left: 0;
-    opacity: 0.24;
+    /* opacity: 0.24; */
     z-index: 1;
-    mix-blend-mode: difference;
+    /* mix-blend-mode: difference; */
     /* filter: blur(10px); */
-    backdrop-filter: blur(40px);
+    /* backdrop-filter: blur(40px); */
 }
 
-.blur-layer {
+/* .blur-layer {
     height: 15rem;
     position: absolute;
     top: 0;
@@ -499,17 +499,49 @@ select {
     z-index: 2;
     filter: blur(10px);
     -webkit-filter: blur(10px);
-}
+} */
 
 .sample-box-wrap {
     height: 15rem;
+    justify-content: space-between;
+    padding-top: 6%;
+    padding-left: 6%;
+    padding-right: 6%;
+    position: relative;
+    border-radius: 8px;
     z-index: 3;
-    background: rgba( var(--clr-violet), 1);
+    background: rgba( var(--clr-violet, 0.5));
     /* backdrop-filter: blur(40px); */
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+
+.sample-box-wrap::before {
+    position: absolute;
+    content: '';
+    background-image: url('../img/slider-rectangle.png');
+    background-size: cover;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 2;
+    box-shadow: inset 0 0 0 300px rgba( var(--clr-purple), 0.45);
+    filter: blur(2px);
+    /* backdrop-filter: blur(40px); */
+    border-radius: inherit;
+    -webkit-border-radius: inherit;
+    -moz-border-radius: inherit;
+    -ms-border-radius: inherit;
+    -o-border-radius: inherit;
+    -webkit-filter: blur(2px);
 }
 
 .sample-text-section {
     z-index: 4;
+    width: 40%;
 }
 
 .sample-img-section {
