@@ -384,29 +384,6 @@ select {
     -o-transform: scale(1.1);
 }
 
-/* .gb-transparent:hover::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    border-radius: 8px;
-    background-color: rgba( var(--clr-green), 0.5);
-    box-shadow: inset 0 0 0 3000px rgba(150, 150, 150, 0.192);
-    backdrop-filter: blur(12px);
-    transform: scale(1.15);
-    -webkit-transform: scale(1.15);
-    -moz-transform: scale(1.15);
-    -ms-transform: scale(1.15);
-    -o-transform: scale(1.15);
-    -webkit-border-radius: 8px;
-    -moz-border-radius: 8px;
-    -ms-border-radius: 8px;
-    -o-border-radius: 8px;
-} */
-
 .gb-green {
     padding: 0.4rem 1.5rem;
     background: white;
@@ -475,34 +452,11 @@ select {
 
 .samples-wrap {
     height: 20rem;
+    width: 33rem;
     position: relative;
 }
 
-.sample-background {
-    height: 15rem;
-    background: url('../img/slider-rectangle.png');
-    position: absolute;
-    top: 0;
-    left: 0;
-    /* opacity: 0.24; */
-    z-index: 1;
-    /* mix-blend-mode: difference; */
-    /* filter: blur(10px); */
-    /* backdrop-filter: blur(40px); */
-}
-
-/* .blur-layer {
-    height: 15rem;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 2;
-    filter: blur(10px);
-    -webkit-filter: blur(10px);
-} */
-
 .sample-box-wrap {
-    height: 15rem;
     justify-content: space-between;
     padding-top: 6%;
     padding-left: 6%;

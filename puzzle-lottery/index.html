@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.2/dist/css/splide.min.css" integrity="sha256-6YrKt7vMU9e4bwtlblASqhvvEt4/0JEQJ/zyWOFKnaM=" crossorigin="anonymous">
     <link rel="stylesheet" href="css/index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <title>Puzzle Lottery</title>
@@ -19,7 +20,7 @@
 <body>
     <a id="back-to-top"><i class="fa fa-angle-up" aria-hidden="true"></i></a>
     <section class="hero-section pt-4 pb-3 text-white">
-        <nav class="navbar navbar-expand-lg navbar-light bg-transparent py-4 mb-3">
+        <nav class="navbar navbar-expand-md navbar-light bg-transparent py-4 mb-3">
             <div class="container text-white ff-inter">
                 <a class="navbar-brand" href="index.html">
                     <img src="img/logoimg.svg" alt="" width="30px" height="30px" class="d-inline-block align-text-top">
@@ -29,18 +30,18 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-white">
-                        <li class="nav-item px-2">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 mb-md-0 text-white">
+                        <li class="nav-item px-lg-2 px-md-0">
                             <a class="nav-link fs-200 text-white letter-spacing-3 " href="#Leaderboard">Leaderboard</a>
                         </li>
-                        <li class="nav-item px-2">
+                        <li class="nav-item px-lg-2 px-md-0">
                             <a id="blog-link" class="nav-link position-relative fs-200 text-white letter-spacing-3 " href="blog.html">Blog</a>
                         </li>
-                        <li class="nav-item px-2">
+                        <li class="nav-item px-lg-2 px-md-0">
                             <a class="nav-link fs-200 text-white letter-spacing-3 " href="live-games.html">Live Games</a>
                         </li>
                     </ul>
-                    <a href="" class="gb-transparent ms-2 fs-200 letter-spacing-3"><p>Join Giyu TV<span class="iconify-inline ms-2" data-icon="logos:whatsapp"></span></p></a>
+                    <a href="" class="gb-transparent ms-lg-2 ms-md-1 fs-200 letter-spacing-3"><p>Join Giyu TV<span class="iconify-inline ms-2" data-icon="logos:whatsapp"></span></p></a>
                 </div>
             </div>
         </nav>
@@ -69,81 +70,82 @@
                 </div>
             </div>
         </div>
-        <div class="swiper mySwiper">
-            <div class="samples-slider swiper-wrapper text-white">
-                <div class="slide-wrap swiper-slide mx-2">
-                    <div class="samples-wrap position-relative w-100">
-                        <div class="sample-box-wrap w-100 d-flex">
-                            <div class="sample-text-section pe-3">
-                                <h5 class="fs-heading-5 fw-800">Chess - Mate in 3</h5>
-                                <p class="fs-caption">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-                            </div>
-                            <div class="sample-img-section w-50 position-relative">
-                                <img src="img/chess-img.png" class="sample-main-img" alt="" srcset="">
-                                <img src="img/shadow-ellipse.png" class="sample-shadow-img" alt="" srcset="">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="slide-wrap swiper-slide mx-2">
-                    <div class="samples-wrap position-relative w-100">
-                        <div class="sample-box-wrap w-100 d-flex">
-                            <div class="sample-text-section pe-3">
-                                <h5 class="fs-heading-5 fw-800">Chess - Mate in 3</h5>
-                                <p class="fs-caption">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-                            </div>
-                            <div class="sample-img-section w-50 position-relative">
-                                <img src="img/chess-img.png" class="sample-main-img" alt="" srcset="">
-                                <img src="img/shadow-ellipse.png" class="sample-shadow-img" alt="" srcset="">
+        <div class="splide featured-slide" aria-label="Featured Puzzles Slide">
+            <div class="splide__track">
+                <ul class="splide__list">
+                    <li class="splide__slide">
+                        <div class="samples-wrap position-relative mx-2">
+                            <div class="sample-box-wrap w-100 h-75 d-flex">
+                                <div class="sample-text-section pe-3 text-white">
+                                    <h5 class="fs-heading-5 fw-800">Chess - Mate in 3</h5>
+                                    <p class="fs-caption">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                                </div>
+                                <div class="sample-img-section w-50 position-relative">
+                                    <img src="img/chess-img.png" class="sample-main-img" alt="" srcset="">
+                                    <img src="img/shadow-ellipse.png" class="sample-shadow-img" alt="" srcset="">
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-                <div class="slide-wrap swiper-slide mx-2">
-                    <div class="samples-wrap position-relative w-100">
-                        <div class="sample-box-wrap w-100 d-flex">
-                            <div class="sample-text-section pe-3">
-                                <h5 class="fs-heading-5 fw-800">Chess - Mate in 3</h5>
-                                <p class="fs-caption">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-                            </div>
-                            <div class="sample-img-section w-50 position-relative">
-                                <img src="img/chess-img.png" class="sample-main-img" alt="" srcset="">
-                                <img src="img/shadow-ellipse.png" class="sample-shadow-img" alt="" srcset="">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="slide-wrap swiper-slide mx-2">
-                    <div class="samples-wrap position-relative w-100">
-                        <div class="sample-box-wrap w-100 d-flex">
-                            <div class="sample-text-section pe-3">
-                                <h5 class="fs-heading-5 fw-800">Chess - Mate in 3</h5>
-                                <p class="fs-caption">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-                            </div>
-                            <div class="sample-img-section w-50 position-relative">
-                                <img src="img/chess-img.png" class="sample-main-img" alt="" srcset="">
-                                <img src="img/shadow-ellipse.png" class="sample-shadow-img" alt="" srcset="">
+                    </li>
+                    <li class="splide__slide">
+                        <div class="samples-wrap position-relative mx-2">
+                            <div class="sample-box-wrap w-100 h-75 d-flex">
+                                <div class="sample-text-section pe-3 text-white">
+                                    <h5 class="fs-heading-5 fw-800">Chess - Mate in 3</h5>
+                                    <p class="fs-caption">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                                </div>
+                                <div class="sample-img-section w-50 position-relative">
+                                    <img src="img/chess-img.png" class="sample-main-img" alt="" srcset="">
+                                    <img src="img/shadow-ellipse.png" class="sample-shadow-img" alt="" srcset="">
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-                <div class="slide-wrap swiper-slide mx-2">
-                    <div class="samples-wrap position-relative w-100">
-                        <div class="sample-box-wrap w-100 d-flex">
-                            <div class="sample-text-section pe-3">
-                                <h5 class="fs-heading-5 fw-800">Chess - Mate in 3</h5>
-                                <p class="fs-caption">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-                            </div>
-                            <div class="sample-img-section w-50 position-relative">
-                                <img src="img/chess-img.png" class="sample-main-img" alt="" srcset="">
-                                <img src="img/shadow-ellipse.png" class="sample-shadow-img" alt="" srcset="">
+                    </li>
+                    <li class="splide__slide">
+                        <div class="samples-wrap position-relative mx-2">
+                            <div class="sample-box-wrap w-100 h-75 d-flex">
+                                <div class="sample-text-section pe-3 text-white">
+                                    <h5 class="fs-heading-5 fw-800">Chess - Mate in 3</h5>
+                                    <p class="fs-caption">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                                </div>
+                                <div class="sample-img-section w-50 position-relative">
+                                    <img src="img/chess-img.png" class="sample-main-img" alt="" srcset="">
+                                    <img src="img/shadow-ellipse.png" class="sample-shadow-img" alt="" srcset="">
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </div>
+                    </li>
+                    <li class="splide__slide">
+                        <div class="samples-wrap position-relative mx-2">
+                            <div class="sample-box-wrap w-100 h-75 d-flex">
+                                <div class="sample-text-section pe-3 text-white">
+                                    <h5 class="fs-heading-5 fw-800">Chess - Mate in 3</h5>
+                                    <p class="fs-caption">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                                </div>
+                                <div class="sample-img-section w-50 position-relative">
+                                    <img src="img/chess-img.png" class="sample-main-img" alt="" srcset="">
+                                    <img src="img/shadow-ellipse.png" class="sample-shadow-img" alt="" srcset="">
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="splide__slide">
+                        <div class="samples-wrap position-relative mx-2">
+                            <div class="sample-box-wrap w-100 h-75 d-flex">
+                                <div class="sample-text-section pe-3 text-white">
+                                    <h5 class="fs-heading-5 fw-800">Chess - Mate in 3</h5>
+                                    <p class="fs-caption">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                                </div>
+                                <div class="sample-img-section w-50 position-relative">
+                                    <img src="img/chess-img.png" class="sample-main-img" alt="" srcset="">
+                                    <img src="img/shadow-ellipse.png" class="sample-shadow-img" alt="" srcset="">
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
             </div>
         </div>
-        
     </section>
 
     <section class="how-to-play section"></section>
@@ -163,7 +165,6 @@
     </footer>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-    <script src="js/main.js"></script>
     <script src="https://kit.fontawesome.com/3f7881fabf.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/3f7881fabf.js" crossorigin="anonymous"></script>
@@ -174,34 +175,9 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@srexi/purecounterjs/dist/purecounter_vanilla.js"></script>
-
-    <script>
-        var swiper = new Swiper(".mySwiper", {
-            slidesPerView: 2,
-            spaceBetween: 20,
-            centeredSlides: true,
-            loop: true,
-            slidesPerGroup: 2,
-            loopFillGroupWithBlank: false,
-            autoplay: {
-                delay: 5000,
-                disableOnInteraction: false,
-            },
-            pagination: {
-                el: ".slide-markers-wrap",
-                clickable: true,
-            },
-            breakpoints: {
-                // 1000: {
-
-                // }
-                1000: {
-                slidesPerView: 3,
-                spaceBetween: 30,
-                },
-            },
-        });
-    </script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.2/dist/js/splide.min.js" integrity="sha256-esNVkEwsSpRc+USDUy7gWsyTZprX+CtOFMUgVq9JYnE=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.4.2/dist/js/splide-extension-auto-scroll.min.js" integrity="sha256-6nMNBYfyROdV6ao6x/RnA8pcQvmL2OH3B+oDZ+EEcmk=" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
     
 </body>
 </html>
