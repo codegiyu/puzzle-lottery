@@ -250,9 +250,13 @@ select {
 .opacity-6 { opacity: 0.6;}
 .opacity-7 { opacity: 0.7;}
 
-.letter-spacing-1 { letter-spacing: 1px;}
+.letter-spacing-1 { letter-spacing: 0.5px;}
 .letter-spacing-2 { letter-spacing: 0.75px;}
-.letter-spacing-3 { letter-spacing: 0.5px;}
+.letter-spacing-3 { letter-spacing: 1px;}
+
+.blend-overlay {
+  mix-blend-mode: overlay;
+}
 
 .glass-effect {
     border: 1px solid linear-gradient(rgba(255,255,255,1), rgba(150, 150, 150, 1));
@@ -475,10 +479,436 @@ select {
     min-height: 275px;
 }
 
-.play-img {
+.card-whatsapp {
     top: -30px;
 }
 
-.card-qanda {
+.card-subscribe {
     top: -40px;
 }
+
+.card-qanda {
+    top: -45px;
+}
+
+.card-award {
+    top: -45px;
+}
+
+.card-money {
+    top: -45px;
+}
+
+.slide-box {
+    overflow: hidden;
+    position: relative;
+}
+  
+.calendar-slides {
+    display: none;
+}
+  
+.calendar-wrap {
+    display: grid;
+    background-color: inherit;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: 75px 70px 40px repeat(5, 65px);
+    grid-gap: 1px;
+    grid-template-areas: 
+        "header header header header header header header" 
+        "month month month month month month month" 
+        "sun mon tue wed thu fri sat" 
+        "day1 day2 day3 day4 day5 day6 day7" 
+        "day8 day9 day10 day11 day12 day13 day14" 
+        "day15 day16 day17 day18 day19 day20 day21" 
+        "day22 day23 day24 day25 day26 day27 day28" 
+        "day29 day30 day31 day32 day33 day34 day35"
+        "day36 day37 day38 day39 day40 day41 day42";
+}
+  
+.slide-control {
+    width: 3rem;
+    height: 3rem;
+    border: 1px solid black;
+    color: #222428;
+    text-align: center;
+    font-weight: bold;
+    transition: .6s ease;
+}
+  
+.slide-control:hover {
+    color: #f2f2f2;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.slide-control i {
+  line-height: 3rem;
+  font-size: 2.5rem;
+}
+  
+.dot {
+    cursor: pointer;
+    height: 1rem;
+    width: 1rem;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    transition: background-color .6s ease;
+}
+  
+  .dot:hover {
+    background-color: #717171;
+}
+  
+  .dot.active {
+    background-color: #717171;
+  }
+  
+  .calendar-header {
+    grid-area: header;
+    background-color: #330080;
+  }
+  
+  .calendar-header h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    line-height: 75px;
+    font-family: "Poppins", sans-serif;
+    word-spacing: 15px;
+    color: #f2f2f2;
+  }
+  
+  .calendar-month {
+    grid-area: month;
+    background-color: #e2e1e1;
+  }
+  
+  .calendar-month h3 {
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 70px;
+    font-family: "Poppins", sans-serif;
+    word-spacing: 15px;
+    color: #19181b;
+  }
+  
+  .weekdays {
+    width: 100%;
+    background-color: #19181b;
+    text-align: center;
+    border-radius: 3px;
+  }
+  
+  .weekdays h6 {
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 40px;
+    font-family: "Poppins", sans-serif;
+    letter-spacing: 1px;
+    word-spacing: 15px;
+    color: #f2f2f2;
+    margin: 0 auto;
+  }
+  
+  .sun {
+    grid-area: sun;
+  }
+  
+  .mon {
+    grid-area: mon;
+  }
+  
+  .tue {
+    grid-area: tue;
+  }
+  
+  .wed {
+    grid-area: wed;
+  }
+  
+  .thu {
+    grid-area: thu;
+  }
+  
+  .fri {
+    grid-area: fri;
+  }
+  
+  .sat {
+    grid-area: sat;
+  }
+  
+  .day-1 {
+    grid-area: day1;
+  }
+  
+  .day-2 {
+    grid-area: day2;
+  }
+  
+  .day-3 {
+    grid-area: day3;
+  }
+  
+  .day-4 {
+    grid-area: day4;
+  }
+  
+  .day-5 {
+    grid-area: day5;
+  }
+  
+  .day-6 {
+    grid-area: day6;
+  }
+  
+  .day-7 {
+    grid-area: day7;
+  }
+  
+  .day-8 {
+    grid-area: day8;
+  }
+  
+  .day-9 {
+    grid-area: day9;
+  }
+  
+  .day-10 {
+    grid-area: day10;
+  }
+  
+  .day-11 {
+    grid-area: day11;
+  }
+  
+  .day-12 {
+    grid-area: day12;
+  }
+  
+  .day-13 {
+    grid-area: day13;
+  }
+  
+  .day-14 {
+    grid-area: day14;
+  }
+  
+  .day-15 {
+    grid-area: day15;
+  }
+  
+  .day-16 {
+    grid-area: day16;
+  }
+  
+  .day-17 {
+    grid-area: day17;
+  }
+  
+  .day-18 {
+    grid-area: day18;
+  }
+  
+  .day-19 {
+    grid-area: day19;
+  }
+  
+  .day-20 {
+    grid-area: day20;
+  }
+  
+  .day-21 {
+    grid-area: day21;
+  }
+  
+  .day-22 {
+    grid-area: day22;
+  }
+  
+  .day-23 {
+    grid-area: day23;
+  }
+  
+  .day-24 {
+    grid-area: day24;
+  }
+  
+  .day-25 {
+    grid-area: day25;
+  }
+  
+  .day-26 {
+    grid-area: day26;
+  }
+  
+  .day-27 {
+    grid-area: day27;
+  }
+  
+  .day-28 {
+    grid-area: day28;
+  }
+  
+  .day-29 {
+    grid-area: day29;
+  }
+  
+  .day-30 {
+    grid-area: day30;
+  }
+  
+  .day-31 {
+    grid-area: day31;
+  }
+  
+  .day-32 {
+    grid-area: day32;
+  }
+  
+  .day-33 {
+    grid-area: day33;
+  }
+  
+  .day-34 {
+    grid-area: day34;
+  }
+  
+  .day-35 {
+    grid-area: day35;
+  }
+  
+  .day-36 {
+    grid-area: day36;
+  }
+  
+  .day-37 {
+    grid-area: day37;
+  }
+  
+  .day-38 {
+    grid-area: day38;
+  }
+  
+  .day-39 {
+    grid-area: day39;
+  }
+  
+  .day-40 {
+    grid-area: day40;
+  }
+  
+  .day-41 {
+    grid-area: day41;
+  }
+  
+  .day-42 {
+    grid-area: day42;
+  }
+
+  .unused-day {
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+  }
+  
+  .active-this-month {
+    height: 100%;
+    border: 1px solid black;
+    border-radius: 3px;
+    padding: 5px 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .active-this-month p {
+    font-size: 0.8rem;
+    line-height: 0.9rem;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  .day-number {
+    margin-bottom: 20px;
+  }
+  
+  .day-winner {
+    text-align: end;
+  }
+  
+  .bonus {
+    background-color: #111;
+    color: #f2f2f2;
+  }
+  
+  .tie-faith-banke {
+    background: linear-gradient(to right, #800080, #008080);
+    color: #f2f2f2;
+  }
+  
+  .giyu-faith {
+    background-color: #800080;
+    color: #f2f2f2;
+  }
+  
+  .banke-o {
+    background-color: #008080;
+    color: #f2f2f2;
+  }
+  
+  .giyu-kingsley {
+    background-color: #0000ff;
+    color: #f2f2f2;
+  }
+  
+  .giyu-ann {
+    background-color: #7851a9;
+    color: #f2f2f2;
+  }
+  
+  .koi {
+    background-color: grey;
+    color: #f2f2f2;
+  }
+  
+  .giyu-abdul {
+    background-color: #FF1493;
+    color: #f2f2f2;
+  }
+  
+  .giyu-johnson {
+    background-color: #a32356;
+    color: #f2f2f2;
+  }
+
+
+  .leaderboard {
+    background: linear-gradient(285.35deg, rgb( var(--clr-blue) ) -36.31%, rgb( var(--clr-blue-green) ) 42.5%, rgb( var(--clr-green) ) 109.29%);
+    background-image: url('../img/lb-background.png');
+    background-size: cover;
+    background-position: center; 
+  }
+
+  .lb-head {
+    position: relative;
+    background-image: linear-gradient(144.51deg, #2A4BB7 3.88%, #800080 118.07%);
+    box-shadow: 0px 4px 24px 5px rgba(0,0,0,0.25);
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+}
+
+.lb-head::after {
+  content: url("../img/lb-vector.png");
+  position: absolute;
+  bottom: -20%;
+  height: 50%;
+  width: 50%;
+}
+
+  .lb-head-img {
+    width: 25%;
+  }
