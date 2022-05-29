@@ -904,9 +904,9 @@ select {
 .lb-head::after {
   content: url("../img/lb-vector.png");
   position: absolute;
-  bottom: -20%;
-  height: 50%;
-  width: 50%;
+  bottom: 0%;
+  /* height: 50%; */
+  width: 25%;
 }
 
   .lb-head-img {
