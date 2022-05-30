@@ -899,16 +899,28 @@ select {
     -moz-border-radius: 50px;
     -ms-border-radius: 50px;
     -o-border-radius: 50px;
-}
+    overflow: hidden;
+    z-index: 1;
+  }
 
-.lb-head::after {
-  content: url("../img/lb-vector.png");
-  position: absolute;
-  bottom: 0%;
-  /* height: 50%; */
-  width: 25%;
-}
+  .lb-vector {
+    position: absolute;
+    bottom: -5%;
+    left: -5%;
+    z-index: -1;
+    width: 60%;
+    height: 60%;
+  }
 
   .lb-head-img {
-    width: 25%;
+    width: 40%;
+  }
+
+  .lb-head-cup-box {
+    background: #057092;
+    z-index: 3;
+  }
+
+  .lb-head-cup-box img {
+    height: 3rem;
   }
