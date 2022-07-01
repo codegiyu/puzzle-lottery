@@ -1922,10 +1922,6 @@ footer {
     right: 1vw;
     border-radius: 5px 0 0 5px;
   }
-  .slide-dots {
-    position: absolute;
-    bottom: 15px;
-  }
   .calendar-header h1 {
     font-size: 2.5rem;
     font-weight: 800;
@@ -1974,9 +1970,6 @@ footer {
   .lb-section {
     padding: 5em 0;
   }
-.lb-section .slide-control {
-top: 45%;
-}
   .lb-slide-box {
     width: 95vw;
   }
