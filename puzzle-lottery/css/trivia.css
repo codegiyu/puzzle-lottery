@@ -14,7 +14,7 @@ body {
 .bg-green { background-color: #32C670 !important;}
 .bg-red { background-color: #F20505 !important;}
 .bg-pink { background-color: #F24B86 !important;}
-.bg-blue { background-color: #07DBF2 !important;}
+.bg-blue { background-color: #039BE6 !important;}
 .bg-dark-grey { background-color: #646678 !important;}
 .bg-neutral-1 { background-color: #6B6B6D !important;}
 .bg-neutral-2 { background-color: #89898B !important;}
@@ -26,13 +26,16 @@ body {
 .dark-grey-border { border-color: #646678 !important;}
 .green-border { border-color: #32C670 !important;}
 .red-border { border-color: #F20505 !important;}
-.blue-border { border-color: #07DBF2 !important;}
+.blue-border { border-color: #039BE6 !important;}
 
 .text-black { color: #1A1A1A;}
 .text-grey-1 { color: #F2F2F2;}
-.text-grey-2 { color: #646678;}
-.text-grey-3 { color: #5c5e6d;}
+.text-grey-2 { color: #b0b2c5;}
+.text-grey-3 { color: #646678;}
+.text-grey-4 { color: #5c5e6d;}
 .text-green { color: #32C670;}
+.text-blue { color: #039BE6;}
+.text-red { color: #F20505;}
 
 
 .fs-medium {
@@ -528,12 +531,55 @@ body {
     .xl-height-400px { height: 400px !important;}
 }
 
+.border-none { border: none;}
+.outline-none { outline: none;}
+
+.bdr-rad-1 { border-radius: 10px !important;}
+.bdr-rad-2 { border-radius: 5px !important;}
+.bdr-rad-none { border-radius: 0px !important;}
+
+.bdr-width-75 { border-width: 0.75px !important;}
+.bdr-width-1 { border-width: 1px !important;}
+.bdr-width-2 { border-width: 2px !important;}
+.bdr-width-3 { border-width: 3px !important;}
+.bdr-width-4 { border-width: 4px !important;}
+.bdr-width-5 { border-width: 5px !important;}
+
+.box-shad-none { box-shadow: none;}
+.box-shad-1 { box-shadow: 0px 4px 4px #00000025;}
+.box-shad-2 { box-shadow: 0px 4px 4px #00000010;}
+.box-shad-content { box-shadow: 4px 4px 12px #00000025;}
+.box-shad-content-2 { box-shadow: 4px 4px 8px #00000025;}
+.box-shad-kc { box-shadow: 0px 30px 40px #076DF305;}
+
 .main-content {
     max-width: 600px;
     min-height: 100vh;
 }
 
+.question-slides {
+    display: none;
+}
+
 .question-track {
     width: 19%;
     height: 3px;
+}
+
+input[type="radio"] {
+    appearance: none;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    border: 2px solid #646678;
+    background: transparent;
+}
+
+input[type="radio"]:checked {
+    background: url("../img/blue-tick-1.jpg");
+    /* background: url("../img/green-tick.png"); */
+    /* background: url("../img/redx-1.png"); */
+    background-size: cover;
+    background-position: center;
+    border: none;
 }

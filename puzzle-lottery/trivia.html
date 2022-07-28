@@ -12,16 +12,56 @@
 <body>
     <section class="main-content bg-dark-blue mx-auto">
         <div class="container p-4 p-sm-5">
-            <h6 class="text-grey-3 fs-label mt-2 mb-2">Trivia Quiz</h6>
-            <h5 class="text-white text-uppercase fs-headline-3 fw-800 my-4">Question <span id="current-question"></span>1<span class="fs-body-1 text-grey-2">/5</span></h5>
-            <div class="question-track-wrap d-flex justify-content-between mb-5">
-                <span id="question-track-1" class="question-track bg-neutral-1"></span>
-                <span id="question-track-2" class="question-track bg-neutral-1"></span>
-                <span id="question-track-3" class="question-track bg-neutral-1"></span>
-                <span id="question-track-4" class="question-track bg-neutral-1"></span>
-                <span id="question-track-5" class="question-track bg-neutral-1"></span>
+            <h6 class="text-grey-4 fs-label mt-2 mb-2">Trivia Quiz</h6>
+            <div class="questions-container">
+                <div class="question-slides question-1-slide">
+                    <h5 class="text-white text-uppercase fs-headline-3 fw-800 my-4">Question <span id="current-question"></span>1<span class="fs-body-1 text-grey-3">/5</span></h5>
+                    <div class="question-track-wrap d-flex justify-content-between mb-5">
+                        <span id="question-track-1" class="question-track bg-neutral-1"></span>
+                        <span id="question-track-2" class="question-track bg-neutral-1"></span>
+                        <span id="question-track-3" class="question-track bg-neutral-1"></span>
+                        <span id="question-track-4" class="question-track bg-neutral-1"></span>
+                        <span id="question-track-5" class="question-track bg-neutral-1"></span>
+                    </div>
+                    <article class="question-1 height-100px mt-5">
+                        <p class="text-grey-1 fs-nav fw-500">What is the capital of Spain?</p>
+                    </article>
+                    <div class="options-wrap">
+                        <label for="q1o1" class="bdr-rad-1 width-100 p-0 my-2">
+                            <div class="option-wrap d-flex align-items-center justify-content-between border bdr-width-2 dark-grey-border 
+                            width-100 height-100 bdr-rad-1 p-3 ps-5">
+                                <p class="q101-text fs-nav text-grey-2 me-5 m-0">Barcelona</p>
+                                <input type="radio" name="q1-options" id="q1o1">
+                            </div>
+                        </label>
+                        <label for="q1o2" class="bdr-rad-1 width-100 p-0 my-2">
+                            <div class="option-wrap d-flex align-items-center justify-content-between border bdr-width-2 dark-grey-border 
+                            width-100 height-100 bdr-rad-1 p-3 ps-5">
+                                <p class="q102-text fs-nav text-grey-2 me-5 m-0">Seville</p>
+                                <input type="radio" name="q1-options" id="q1o2">
+                            </div>
+                        </label>
+                        <label for="q1o3" class="bdr-rad-1 width-100 p-0 my-2">
+                            <div class="option-wrap d-flex align-items-center justify-content-between border bdr-width-2 dark-grey-border 
+                            width-100 height-100 bdr-rad-1 p-3 ps-5">
+                                <p class="q103-text fs-nav text-grey-2 me-5 m-0">Madrid</p>
+                                <input type="radio" name="q1-options" id="q1o3">
+                            </div>
+                        </label>
+                        <label for="q1o4" class="bdr-rad-1 width-100 p-0 my-2">
+                            <div class="option-wrap d-flex align-items-center justify-content-between border bdr-width-2 dark-grey-border 
+                            width-100 height-100 bdr-rad-1 p-3 ps-5">
+                                <p class="q104-text fs-nav text-grey-2 me-5 m-0">Ibiza</p>
+                                <input type="radio" name="q1-options" id="q1o4">
+                            </div>
+                        </label>
+                    </div>
+                </div>
+                <div class="question-slides question-2-slide"></div>
+                <div class="question-slides question-3-slide"></div>
+                <div class="question-slides question-4-slide"></div>
+                <div class="question-slides question-5-slide"></div>
             </div>
-            <article class="question-1"></article>
         </div>
     </section>
 
