@@ -59,3 +59,12 @@ function showSlides (n) {
 function currentSlide (n) {
     showSlides (slideIndex = n);
 }
+
+var d = Date(Date.now());
+ 
+  // Converting the number of millisecond
+  // in date string
+  a = d.toString()
+ 
+  // Printing the current date                   
+  console.log("The current date is: " + a);
