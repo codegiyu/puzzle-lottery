@@ -566,7 +566,7 @@ body {
     height: 3px;
 }
 
-input[type="radio"] {
+input[type="checkbox"] {
     appearance: none;
     width: 22px;
     height: 22px;
@@ -575,10 +575,8 @@ input[type="radio"] {
     background: transparent;
 }
 
-input[type="radio"]:checked {
+input[type="checkbox"]:checked {
     background: url("../img/blue-tick-1.jpg");
-    /* background: url("../img/green-tick.png"); */
-    /* background: url("../img/redx-1.png"); */
     background-size: cover;
     background-position: center;
     border: none;
