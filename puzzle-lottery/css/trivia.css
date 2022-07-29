@@ -24,6 +24,8 @@ body {
 .bg-neutral-6 { background-color: #F7F7F7 !important;}
 
 .dark-grey-border { border-color: #646678 !important;}
+.grey-border { border-color: #6B6B6D !important;}
+.light-blue-border { border-color: #161e3a !important;}
 .green-border { border-color: #32C670 !important;}
 .red-border { border-color: #F20505 !important;}
 .blue-border { border-color: #039BE6 !important;}
@@ -555,6 +557,16 @@ body {
 .main-content {
     max-width: 600px;
     min-height: 100vh;
+}
+
+.countdown-wrap {
+    top: -20px;
+    right: 0px;
+    transition: all 10000ms linear;
+}
+
+.countdown-wrap.timer-start {
+    border: 3px solid #039BE6;
 }
 
 .question-slides {
