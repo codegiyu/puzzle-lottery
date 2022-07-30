@@ -562,7 +562,6 @@ body {
 .countdown-wrap {
     top: -20px;
     right: 0px;
-    transition: all 10000ms linear;
 }
 
 .countdown-wrap.timer-start {

@@ -10,6 +10,30 @@ let answerTwo;
 let answerThree;
 let answerFour;
 let answerFive;
+let secondsCountdownOne;
+let secondsCountdownTwo;
+let secondsCountdownThree;
+let secondsCountdownFour;
+let secondsCountdownFive;
+let millisecondsCountdownOne;
+let millisecondsCountdownTwo;
+let millisecondsCountdownThree;
+let millisecondsCountdownFour;
+let millisecondsCountdownFive;
+let secondsOne = 10;
+let secondsTwo = 10;
+let secondsThree = 10;
+let secondsFour = 10;
+let secondsFive = 10;
+let millisecondsOne = 1000;
+let millisecondsTwo = 1000;
+let millisecondsThree = 1000;
+let millisecondsFour = 1000;
+let millisecondsFive = 1000;
+let countdownCircle = document.querySelectorAll(".countdown-wrap");
+let countdownText = document.querySelectorAll(".timer");
+let secondsText = document.querySelectorAll(".timer-seconds");
+let millisecondsText = document.querySelectorAll(".timer-milliseconds");
 let trackOne = document.querySelectorAll(".question-track-1");
 let trackTwo = document.querySelectorAll(".question-track-2");
 let trackThree = document.querySelectorAll(".question-track-3");
@@ -40,6 +64,80 @@ function showSlides() {
         timeLoaded = new Date();
         console.log(slideIndex);
     }
+    
+    setTimeout( () => {
+        if (slideIndex == 1) {
+            secondsCountdownOne = setInterval(function() {
+                countdownCircle[0].classList.replace("grey-border", "green-border");
+                countdownText[0].classList.replace("text-white", "text-green");
+                secondsOne--;
+                if (secondsOne == 0) {
+                    clearInterval(secondsCountdownOne);
+                }
+                if (secondsOne == 4) {
+                    countdownCircle[0].classList.replace("green-border", "red-border");
+                    countdownText[0].classList.replace("text-green", "text-red");
+                }
+                secondsText[0].innerHTML = secondsOne;
+            }, 1000);
+        } else if (slideIndex == 2) {
+            secondsCountdownTwo = setInterval(function() {
+                countdownCircle[1].classList.replace("grey-border", "green-border");
+                countdownText[1].classList.replace("text-white", "text-green");
+                secondsTwo--;
+                if (secondsTwo == 0) {
+                    clearInterval(secondsCountdownTwo);
+                }
+                if (secondsTwo == 4) {
+                    countdownCircle[1].classList.replace("green-border", "red-border");
+                    countdownText[1].classList.replace("text-green", "text-red");
+                }
+                secondsText[1].innerHTML = secondsTwo;
+            }, 1000);
+        } else if (slideIndex == 3) {
+            secondsCountdownThree = setInterval(function() {
+                countdownCircle[2].classList.replace("grey-border", "green-border");
+                countdownText[2].classList.replace("text-white", "text-green");
+                secondsThree--;
+                if (secondsThree == 0) {
+                    clearInterval(secondsCountdownThree);
+                }
+                if (secondsThree == 4) {
+                    countdownCircle[2].classList.replace("green-border", "red-border");
+                    countdownText[2].classList.replace("text-green", "text-red");
+                }
+                secondsText[2].innerHTML = secondsThree;
+            }, 1000);
+        } else if (slideIndex == 4) {
+            secondsCountdownFour = setInterval(function() {
+                countdownCircle[3].classList.replace("grey-border", "green-border");
+                countdownText[3].classList.replace("text-white", "text-green");
+                secondsFour--;
+                if (secondsFour == 0) {
+                    clearInterval(secondsCountdownFour);
+                }
+                if (secondsFour == 4) {
+                    countdownCircle[3].classList.replace("green-border", "red-border");
+                    countdownText[3].classList.replace("text-green", "text-red");
+                }
+                secondsText[3].innerHTML = secondsFour;
+            }, 1000);
+        } else if (slideIndex == 5) {
+            secondsCountdownFive = setInterval(function() {
+                countdownCircle[4].classList.replace("grey-border", "green-border");
+                countdownText[4].classList.replace("text-white", "text-green");
+                secondsFive--;
+                if (secondsFive == 0) {
+                    clearInterval(secondsCountdownFive);
+                }
+                if (secondsFive == 4) {
+                    countdownCircle[4].classList.replace("green-border", "red-border");
+                    countdownText[4].classList.replace("text-green", "text-red");
+                }
+                secondsText[4].innerHTML = secondsFive;
+            }, 1000);
+        }
+    }, 3000);
 }
 
 function showAnswer(n) {
@@ -122,9 +220,20 @@ radios.forEach(radio => {
     radio.addEventListener("click", () => {
         let radioName = radio.getAttribute("class");
         let radioQuestion = radioName.charAt(1);
+
+        if (radioQuestion == 1) {
+            clearInterval(secondsCountdownOne);
+        } else if (radioQuestion == 2) {
+            clearInterval(secondsCountdownTwo);
+        } else if (radioQuestion == 3) {
+            clearInterval(secondsCountdownThree);
+        } else if (radioQuestion == 4) {
+            clearInterval(secondsCountdownFour);
+        } else if (radioQuestion == 5) {
+            clearInterval(secondsCountdownFive);
+        }
         
         radio.parentElement.classList.replace("dark-grey-border", "blue-border");
-
         radio.previousElementSibling.classList.replace("text-grey-2", "text-blue");
 
         let radioGroup = document.getElementsByClassName(radioName);
@@ -134,7 +243,6 @@ radios.forEach(radio => {
         }
 
         clickTime = new Date();
-
         bonusTime = clickTime - timeLoaded;
 
         if (bonusTime - 3000 < 0) {
@@ -276,7 +384,5 @@ radios.forEach(radio => {
                 }            
             }
         }, 1000)
-
-        
     })
 })
