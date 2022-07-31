@@ -15,6 +15,11 @@ let secondsCountdownTwo;
 let secondsCountdownThree;
 let secondsCountdownFour;
 let secondsCountdownFive;
+let stopSecondsCountdownOne;
+let stopSecondsCountdownTwo;
+let stopSecondsCountdownThree;
+let stopSecondsCountdownFour;
+let stopSecondsCountdownFive;
 let millisecondsCountdownOne;
 let millisecondsCountdownTwo;
 let millisecondsCountdownThree;
@@ -47,13 +52,12 @@ answerFive = "1995";
 
 window.addEventListener("load", () => {
     showSlides(slideIndex);
-    questionTimer = setInterval(function() { showAnswer(slideIndex)}, 13000);
 })
 
 function showSlides() {
     let i;
     
-    if (slideIndex == slides.length +1) {
+    if (slideIndex == slides.length) {
         clearInterval(questionTimer);
     } else {
         for (i = 0; i < slides.length; i++) {
@@ -66,7 +70,7 @@ function showSlides() {
     }
     
     setTimeout( () => {
-        if (slideIndex == 1) {
+        if (slideIndex == 3) {
             secondsCountdownOne = setInterval(function() {
                 countdownCircle[0].classList.replace("grey-border", "green-border");
                 countdownText[0].classList.replace("text-white", "text-green");
@@ -80,7 +84,7 @@ function showSlides() {
                 }
                 secondsText[0].innerHTML = secondsOne;
             }, 1000);
-        } else if (slideIndex == 2) {
+        } else if (slideIndex == 4) {
             secondsCountdownTwo = setInterval(function() {
                 countdownCircle[1].classList.replace("grey-border", "green-border");
                 countdownText[1].classList.replace("text-white", "text-green");
@@ -94,7 +98,7 @@ function showSlides() {
                 }
                 secondsText[1].innerHTML = secondsTwo;
             }, 1000);
-        } else if (slideIndex == 3) {
+        } else if (slideIndex == 5) {
             secondsCountdownThree = setInterval(function() {
                 countdownCircle[2].classList.replace("grey-border", "green-border");
                 countdownText[2].classList.replace("text-white", "text-green");
@@ -108,7 +112,7 @@ function showSlides() {
                 }
                 secondsText[2].innerHTML = secondsThree;
             }, 1000);
-        } else if (slideIndex == 4) {
+        } else if (slideIndex == 6) {
             secondsCountdownFour = setInterval(function() {
                 countdownCircle[3].classList.replace("grey-border", "green-border");
                 countdownText[3].classList.replace("text-white", "text-green");
@@ -122,7 +126,7 @@ function showSlides() {
                 }
                 secondsText[3].innerHTML = secondsFour;
             }, 1000);
-        } else if (slideIndex == 5) {
+        } else if (slideIndex == 7) {
             secondsCountdownFive = setInterval(function() {
                 countdownCircle[4].classList.replace("grey-border", "green-border");
                 countdownText[4].classList.replace("text-white", "text-green");
@@ -142,15 +146,15 @@ function showSlides() {
 
 function showAnswer(n) {
     console.log(`slideIndex is ${slideIndex}`)
-    let allOptions = document.querySelectorAll(`.q${n}-options`);
+    let allOptions = document.querySelectorAll(`.q${n-2}-options`);
     allOptions.forEach(option => {
         option.checked = true;
         option.parentElement.classList.replace("dark-grey-border", "red-border");
         option.previousElementSibling.classList.replace("text-grey-2", "text-red");
         option.style.backgroundImage = "url('img/redx-1.png')";
     })
-    if (n == 1) {
-        let correctOption = document.querySelector(`.q${n}-options[value='${answerOne}']`);
+    if (n == 3) {
+        let correctOption = document.querySelector(`.q${n-2}-options[value='${answerOne}']`);
         correctOption.parentElement.classList.replace("red-border", "green-border");
         correctOption.previousElementSibling.classList.replace("text-red", "text-green");
         correctOption.checked = true;
@@ -159,8 +163,8 @@ function showAnswer(n) {
             track.classList.replace("bg-white", "bg-red");
             track.classList.replace("bg-neutral-1", "bg-red");
         })
-    } else if (n == 2) {
-        let correctOption = document.querySelector(`.q${n}-options[value='${answerTwo}']`);
+    } else if (n == 4) {
+        let correctOption = document.querySelector(`.q${n-2}-options[value='${answerTwo}']`);
         correctOption.parentElement.classList.replace("red-border", "green-border");
         correctOption.previousElementSibling.classList.replace("text-red", "text-green");
         correctOption.checked = true;
@@ -169,8 +173,8 @@ function showAnswer(n) {
             track.classList.replace("bg-white", "bg-red");
             track.classList.replace("bg-neutral-1", "bg-red");
         })
-    } else if (n == 3) {
-        let correctOption = document.querySelector(`.q${n}-options[value='${answerThree}']`);
+    } else if (n == 5) {
+        let correctOption = document.querySelector(`.q${n-2}-options[value='${answerThree}']`);
         correctOption.parentElement.classList.replace("red-border", "green-border");
         correctOption.previousElementSibling.classList.replace("text-red", "text-green");
         correctOption.checked = true;
@@ -179,8 +183,8 @@ function showAnswer(n) {
             track.classList.replace("bg-white", "bg-red");
             track.classList.replace("bg-neutral-1", "bg-red");
         })
-    } else if (n == 4) {
-        let correctOption = document.querySelector(`.q${n}-options[value='${answerFour}']`);
+    } else if (n == 6) {
+        let correctOption = document.querySelector(`.q${n-2}-options[value='${answerFour}']`);
         correctOption.parentElement.classList.replace("red-border", "green-border");
         correctOption.previousElementSibling.classList.replace("text-red", "text-green");
         correctOption.checked = true;
@@ -189,8 +193,8 @@ function showAnswer(n) {
             track.classList.replace("bg-white", "bg-red");
             track.classList.replace("bg-neutral-1", "bg-red");
         })
-    } else if (n == 5) {
-        let correctOption = document.querySelector(`.q${n}-options[value='${answerFive}']`);
+    } else if (n == 7) {
+        let correctOption = document.querySelector(`.q${n-2}-options[value='${answerFive}']`);
         correctOption.parentElement.classList.replace("red-border", "green-border");
         correctOption.previousElementSibling.classList.replace("text-red", "text-green");
         correctOption.checked = true;
@@ -222,15 +226,15 @@ radios.forEach(radio => {
         let radioQuestion = radioName.charAt(1);
 
         if (radioQuestion == 1) {
-            clearInterval(secondsCountdownOne);
+            stopSecondsCountdownOne = clearInterval(secondsCountdownOne);
         } else if (radioQuestion == 2) {
-            clearInterval(secondsCountdownTwo);
+            stopSecondsCountdownTwo = clearInterval(secondsCountdownTwo);
         } else if (radioQuestion == 3) {
-            clearInterval(secondsCountdownThree);
+            stopSecondsCountdownThree = clearInterval(secondsCountdownThree);
         } else if (radioQuestion == 4) {
-            clearInterval(secondsCountdownFour);
+            stopSecondsCountdownFour = clearInterval(secondsCountdownFour);
         } else if (radioQuestion == 5) {
-            clearInterval(secondsCountdownFive);
+            stopSecondsCountdownFive = clearInterval(secondsCountdownFive);
         }
         
         radio.parentElement.classList.replace("dark-grey-border", "blue-border");
