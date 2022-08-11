@@ -25,6 +25,7 @@
     --ff-manrope: 'Manrope', sans-serif;
     --ff-inter: 'Inter', sans-serif;
 
+    --fs-1000: 4.875rem;
     --fs-900: 4.25rem;
     --fs-800: 3.625rem;
     --fs-700: 3rem;
@@ -163,6 +164,11 @@ select {
 
 /* Typography */
 
+.fs-heading-h0 {
+  font-size: var(--fs-1000);
+  line-height: 5.9rem;
+  font-weight: 800;
+}
 .fs-heading-h1 {
     font-size: var(--fs-900);
     line-height: 5.25rem;
@@ -199,6 +205,7 @@ select {
     font-weight: 600;
     /* letter-spacing: -0.03em; */
 }
+
 .fs-title-2 {
     font-size: var(--fs-400);
     line-height: 2.25rem;
@@ -924,3 +931,56 @@ select {
   .lb-head-cup-box img {
     height: 3rem;
   }
+  .hall-of-fame{
+    background: #F8F8FF;
+  }
+   .bg-hall {
+    background: #1DB0DC;
+    border-radius: 10px;
+    z-index: 1; 
+    min-height: 18rem;
+    
+  }
+  .hall-one{
+    background:url(/assets/fame.png), linear-gradient(280.16deg, #1DB0DC -3.71%, #2AC44B 179.32%);
+    z-index: 2;
+    border-radius: 10px;
+    /* mix-blend-mode: difference; */
+        /*opacity: 0.24;
+    filter: blur(13px); */
+  } 
+  .hall-picture{
+    width: 23%;
+  }
+  .hall-border{
+    box-shadow: 0px 4px 24px -1px rgba(0, 0, 0, 0.05);
+    backdrop-filter: blur(51px);
+  }
+  .faq-heading{
+    color: #602B71;
+  }
+  .accordion-button {
+    color: white;
+    background: linear-gradient(97.34deg, #2A4BB7 0.82%, #800080 100%);
+    border-radius: 5px !important;
+  }
+  .accordion-button:focus {
+    box-shadow: none;
+  }
+  .accordion-button::after {
+    content: url('https://api.iconify.design/bxs/right-arrow.svg?color=white') !important;
+  }
+  .accordion-body, .accordion-button {
+    font-size: 18px;
+  }
+  .accordion-button:not(.collapsed) {
+    color: white;
+    background: linear-gradient(97.34deg, #2A4BB7 0.82%, #800080 100%);
+  }
+  .accordion-button:not(.collapsed)::after {
+    background-image: none;
+    transform: rotate(90deg);
+  }
+
+  
+ 
