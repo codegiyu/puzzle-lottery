@@ -273,6 +273,7 @@ select {
     backdrop-filter: blur(51px);
 }
 
+
 /* --------------------------- */
 /* ---------Components-------- */
 /* --------------------------- */
@@ -931,7 +932,7 @@ select {
   .lb-head-cup-box img {
     height: 3rem;
   }
-  .hall-of-fame{
+  .hall-of-fame, .about-giyu{
     background: #F8F8FF;
   }
    .bg-hall {
@@ -982,5 +983,41 @@ select {
     transform: rotate(90deg);
   }
 
-  
- 
+  .about-giyu img{
+    border-radius: 50px;
+  }
+  .border-start {
+    border-left: 1px solid #928B8B !important;
+  }
+  .about-giyu p, .about-giyu a {
+    color: #928B8B;
+  }
+  .giyu-logo{
+    margin-right: -85px;
+  }
+  .gb-giyu-logo {
+    padding: 0.4rem 1.5rem; 
+    background: linear-gradient(94.13deg, rgba(255,251,251,0.39) 3.84%, rgba(253,249,249,0.06) 108.43%);
+    box-shadow: 0px 4px 24px -1px rgba(0, 0, 0, 0.05);
+    backdrop-filter: blur(51px);
+    border-radius: 12px;
+    border: 1px solid #928B8B;
+}
+footer {
+  background: #161515;
+}
+footer a, footer p {
+  color: #AAAAAB;
+}
+
+footer a:hover {
+  color: #602B71;
+}
+
+.border-bottom {
+  border-bottom: 1px solid #AAAAAB !important;
+}
+
+footer i{
+  color: #AAAAAB; 
+}
